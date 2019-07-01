@@ -285,6 +285,8 @@ export default {
           ...defaults
         }
       ];
+
+      this.startEdit(tempKey);
     },
 
     stageValue({ field, value }) {
