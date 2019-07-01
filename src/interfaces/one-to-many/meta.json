@@ -17,6 +17,17 @@
         "placeholder": "$t:template_placeholder"
       }
     },
+    "delete_mode": {
+      "name": "$t:delete_mode",
+      "comment": "$t:delete_mode_comment",
+      "interface": "dropdown",
+      "options": {
+        "choices": {
+          "item": "Delete related item",
+          "relationship": "Nullify relationship"
+        }
+      }
+    },
     "allow_create": {
       "name": "$t:allow_create",
       "comment": "$t:allow_create_comment",
@@ -47,7 +58,9 @@
       "allow_create": "Allow Create",
       "allow_create_comment": "Allow the user to create a new item from this interface",
       "allow_select": "Allow Select",
-      "allow_select_comment": "Allow the user to select an existing item"
+      "allow_select_comment": "Allow the user to select an existing item",
+      "delete_mode": "Delete mode",
+      "delete_mode_comment": "What to do when the user deselects an item"
     },
     "fr-FR": {
       "o2m": "Un-à-plusieurs (O2M)",
