@@ -37,7 +37,7 @@
         >
           <div
             v-for="item in itemsSorted"
-            :key="item[junctionRelatedKey][relatedPrimaryKeyField] || item.$tempKey"
+            :key="item[junctionRelatedKey][relatedPrimaryKeyField]"
             class="row"
             @click="startEdit(item[junctionPrimaryKey])"
           >
