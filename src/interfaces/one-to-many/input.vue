@@ -334,7 +334,7 @@ export default {
 
       // Remove all the items from this.items that aren't selected anymore
       this.items = this.items.filter(item => {
-        const primaryKey = item[this.junctionRelatedKey][this.relatedPrimaryKeyField];
+        const primaryKey = item[this.relatedPrimaryKeyField];
         return primaryKeys.includes(primaryKey);
       });
 
