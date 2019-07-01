@@ -21,10 +21,11 @@
       "name": "$t:delete_mode",
       "comment": "$t:delete_mode_comment",
       "interface": "dropdown",
+      "default": "item",
       "options": {
         "choices": {
           "item": "Delete related item",
-          "relationship": "Nullify relationship"
+          "relation": "Nullify relationship"
         }
       }
     },

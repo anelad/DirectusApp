@@ -410,7 +410,13 @@ export default {
       const newPrimaryKeys = value.map(item => item[this.relatedPrimaryKeyField]);
       const deletedKeys = _.difference(savedPrimaryKeys, newPrimaryKeys);
       const deletedRows = deletedKeys.map(key => {
-        // TODO: add support for remove relationship option
+        if (this.options.delete_mode === "relation") {
+          return {
+            [this.relatedPrimaryKeyField]: key,
+            [recursiveKey]: null
+          };
+        }
+
         return {
           [this.relatedPrimaryKeyField]: key,
           $delete: true
