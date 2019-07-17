@@ -111,10 +111,10 @@ export default {
       BIGINT:
         "Tamsayı. İşaretli ise (negatif tamsayıları kabul ediyorsa) değer -9,223,372,036,854,775,808 ile 9,223,372,036,854,775,807 arasında, değilse maksimum 18,446,744,073,709,551,615 olarak tanımlıdır.",
       BOOLEAN: "Doğru ya da Yanlış. Veritabanına 1 ya da 0 olarak kaydedilecektir.",
-      CHAR:
-        "Sabit uzunlukta ikiliksiz karakter dizesi. Uzunluk 0 ile 255 arasında olabilir.",
+      CHAR: "Sabit uzunlukta ikiliksiz karakter dizesi. Uzunluk 0 ile 255 arasında olabilir.",
       DATE: "Tarih. '01/01/1000' ile '31/12/9999' arasında olabilir.",
-      DATETIME: "Tarih ve Zaman. '01/01/1000 00:00:00' ile '31/12/9999 23:59:59' arasında olabilir.",
+      DATETIME:
+        "Tarih ve Zaman. '01/01/1000 00:00:00' ile '31/12/9999 23:59:59' arasında olabilir.",
       DECIMAL:
         "1 ile 65 arasında tamsayı haneli, 0 ile 30 arasında ondalık haneli kesin doğrulukta ondalık sayı.",
       DOUBLE: "8 baytlık ondalık sayı.",
@@ -129,7 +129,8 @@ export default {
         "Tamsayı. İşaretli ise (negatif tamsayıları kabul ediyorsa) değer -32,768 ile 32,767 arasında, değilse maksimum 65,535 olarak tanımlıdır.",
       TEXT: "En fazla 65,535 karakterden oluşabilen karakter dizesi.",
       TIME: "Zaman (Saat).`-838:59:59` ile `838:59:59` arasında olabilir.",
-      TIMESTAMP: "Tarih ve Zaman (Zaman Damgası). `1970-01-01 00:00:01` UTC ve `2038-01-19 03:14:07` UTC arasında olabilir.",
+      TIMESTAMP:
+        "Tarih ve Zaman (Zaman Damgası). `1970-01-01 00:00:01` UTC ve `2038-01-19 03:14:07` UTC arasında olabilir.",
       TINYINT:
         "Tamsayı. İşaretli ise (negatif tamsayıları kabul ediyorsa) değer -128 ile 127 arasında, değilse maksimum 255 olarak tanımlıdır.",
       TINYTEXT: "En fazla 255 karakterden oluşabilen karakter dizesi.",
@@ -152,8 +153,7 @@ export default {
   delete: "Sil",
   delete_are_you_sure: "Bu ögeyi silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
   delete_bookmark: "Yer imini kaldır",
-  delete_bookmark_body:
-    "Bu yer imini kaldırmak istediğinize emin misiniz? Bu işlem geri alınamaz.",
+  delete_bookmark_body: "Bu yer imini kaldırmak istediğinize emin misiniz? Bu işlem geri alınamaz.",
   delete_collection_are_you_sure:
     "Bu koleksiyonu silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
   delete_confirmation: "Silme İşlemi Doğrulaması",
@@ -171,7 +171,8 @@ export default {
   dont_manage_copy:
     "{collection} koleksiyonu için tanımlanan izinler, tercihler ve ayarlar sistemden kalıcı olarak kaldırılacaktır. Onaylıyor musunuz?",
   dont_show: "Gösterme",
-  drop_files: "Dosya sürükleme-bırakma yapılamaz. | Bir dosyayı sürükleyip bırakın... | Bir veya birden fazla dosya sürükleyip bırakın...",
+  drop_files:
+    "Dosya sürükleme-bırakma yapılamaz. | Bir dosyayı sürükleyip bırakın... | Bir veya birden fazla dosya sürükleyip bırakın...",
   duplicate: "Çoğalt",
   duplicating_field: "Çoğaltılan Alan",
   editing: "Düzenlenen Öge: {collection}",
@@ -230,8 +231,10 @@ export default {
     array: "API yanıtında standart dizi (array) formatı",
     date: "Tarih, örn: 2018-09-19",
     datetime: "ISO formatında tarih ve zaman, örn: 2018-09-19T14:00:43.381Z",
-    datetime_created: "Revizyonlar tarafından kullanılan, bir ögenin yaratıldığı zamanı tutan sistem alanı.",
-    datetime_updated: "Revizyonlar tarafından kullanılan, bir ögenin son güncellendiği zamanı tutan sistem alanı.",
+    datetime_created:
+      "Revizyonlar tarafından kullanılan, bir ögenin yaratıldığı zamanı tutan sistem alanı.",
+    datetime_updated:
+      "Revizyonlar tarafından kullanılan, bir ögenin son güncellendiği zamanı tutan sistem alanı.",
     decimal: "Ondalık Sayı",
     file: "'directus_files.id'ye bağlı yabancıl anahtar (foreign key)",
     group: "Alanları görsel olarak bir arada tutan grup(*)",
@@ -243,12 +246,13 @@ export default {
     o2m: "Bire çok (One-to-Many) ilişkisi",
     sort: "Sürükle-Bırak ögelerin yeniden sıralanmasında kullanılan sistem alanı",
     status: "Yayın iş akışında kullanılan sistem alanı",
-    string:
-      "Uzunluğu ile belirtilen ve sınırlanan karakter, numara, boşluk ve semboller bütünü",
+    string: "Uzunluğu ile belirtilen ve sınırlanan karakter, numara, boşluk ve semboller bütünü",
     time: "Zaman, örn: 14:09:22",
     translation: "Çeviri alanlarına özgü, çoklu-dil bilgilerini tutan alan.",
-    user_created: "Revizyonlar tarafından kullanılan, ögeyi yaratan kullanıcı bilgisini tutan alan.",
-    user_updated: "Revizyonlar tarafından kullanılan, ögeyi son güncelleyen kullanıcı bilgisini tutan alan.",
+    user_created:
+      "Revizyonlar tarafından kullanılan, ögeyi yaratan kullanıcı bilgisini tutan alan.",
+    user_updated:
+      "Revizyonlar tarafından kullanılan, ögeyi son güncelleyen kullanıcı bilgisini tutan alan.",
     uuid: "Evrensel Benzersiz Tanımlayıcı"
   },
   file: "Dosya",
@@ -277,7 +281,8 @@ export default {
   interface: "Arayüz",
   interface_count: "Arayüz yok | 1 Arayüz | {count} Arayüz",
   interface_has_no_options: "Bu arayüzün herhangi bir opsiyonu bulunmuyor.",
-  interface_settings: "Her arayüz ihtiyaçlarınıza göre yapılandırılabilir. Aşağıdakiler bu arayüz için mevcut olan opsiyonlardır, fakat sadece birkısmı gereklidir.",
+  interface_settings:
+    "Her arayüz ihtiyaçlarınıza göre yapılandırılabilir. Aşağıdakiler bu arayüz için mevcut olan opsiyonlardır, fakat sadece birkısmı gereklidir.",
   interfaces: "Arayüzler",
   is_empty: "Boş olabilir",
   is_not_null: "NULL değil",
@@ -305,7 +310,8 @@ export default {
   manage: "Düzenle", // not sure
   manage_started: "Koleksiyon {collection} Düzenleniyor", // not sure
   manage_stopped: "Koleksiyon {collection} Düzenlemesi Bitti", // not sure
-  max_one_primary_key: "Her koleksiyon sadece tek bir birincil anahtara (primary key) sahip olabilir.",
+  max_one_primary_key:
+    "Her koleksiyon sadece tek bir birincil anahtara (primary key) sahip olabilir.",
   max_size: "Max Boyut: {size}",
   mixed: "Karışık",
   modified_by: "Düzenleyen",
@@ -400,13 +406,14 @@ export default {
   project_key: "Proje Anahtarı",
   project_name: "Proje Adı",
   read: "Görüntüleme", // not sure
-  readable_fields: "Görüntülene Alanlar", // not sure 
+  readable_fields: "Görüntülene Alanlar", // not sure
   readable_fields_copy: "Kullanıcıların görebileceği alanları seçiniz.",
   readonly: "Salt-Okunur",
   regex: "RegEx",
   related_collection: "İlişkili Koleksiyon",
   related_entries: "İlişkili girdiler var",
-  relation_setup: "Bu ilişkisel bir alan olduğu için bu alanı gerekli diğer alanlar ile ilişkilendirmemiz gerekiyor.",
+  relation_setup:
+    "Bu ilişkisel bir alan olduğu için bu alanı gerekli diğer alanlar ile ilişkilendirmemiz gerekiyor.",
   relation_setup_copy:
     "Directus farklı farklı ilişkisel veri tipi kullanır, bu arayüz bunlardan {relation} olanını kullanmaktadır.",
   relational: "İlişkisel", // not sure
@@ -461,11 +468,13 @@ export default {
   sign_in: "Oturum Aç",
   sign_out: "Oturum Kapat",
   sign_out_confirm: "Oturumunuzu kapatmak istediğinize emin misiniz?",
-  sign_out_confirm_edits: "Oturumunuzu kapatmak istediğinize emin misiniz? Kaydedilmemiş değişiklikler kaybedilecek.",
+  sign_out_confirm_edits:
+    "Oturumunuzu kapatmak istediğinize emin misiniz? Kaydedilmemiş değişiklikler kaybedilecek.",
   signing_in: "Oturum açılıyor...",
   single: "Tek",
   something_went_wrong: "Birşeyler ters gitti.",
-  something_went_wrong_body: "İstek işlenirken bir sorun ile karşılaşıldı. Sayfayı yeniden yükleyin ve tekrar deneyin.",
+  something_went_wrong_body:
+    "İstek işlenirken bir sorun ile karşılaşıldı. Sayfayı yeniden yükleyin ve tekrar deneyin.",
   sort: "Sırala",
   sort_by: "Şuna göre sırala:",
   spacing: "Aralık",
@@ -477,7 +486,8 @@ export default {
   to: "Kime",
   undo_changes: "Değişiklikleri geri al",
   unique: "Benzersiz",
-  unsaved_changes_copy: "Kaydedilmemiş değişiklikleriniz var! Sayfayı terk etmek istediğinize emin misiniz?",
+  unsaved_changes_copy:
+    "Kaydedilmemiş değişiklikleriniz var! Sayfayı terk etmek istediğinize emin misiniz?",
   update: "Güncelle",
   update_confirm: "{count} ögeyi güncellemek istediğinize emin misiniz?",
   update_field: "Alanı Güncelle",
