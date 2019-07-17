@@ -1,9 +1,9 @@
-// Directus App Turkish Translation v0.1
+// Directus App Turkish Translation v0.2
 // Translated by Arda Oğul Üçpınar (https://github.com/anelad) from English file.
 //
 // - Notes
-// This file has some translations added '(*)' to its end. This means that the value is not translated or translated but the translator does not feel right about the translation.
-// After reviewing the translation on-the-go these translations will be corrected and maybe some already-translated values will be changed.
+// This file has some translations commented as `not sure` after it. These values might be corrected in further versions.
+// I will translate built-in interfaces too when I have time.
 //
 
 /* eslint-disable max-len */
@@ -52,7 +52,7 @@ export default {
   batch_delete_confirm:
     "Hiç öge seçilmedi | Seçtiğiniz ögeyi silmek istediğinize emin misiniz? Bu işlem geri alınamaz. | Seçtiğiniz {count} ögeyi silmek istediğinize emin misiniz? Bu işlem geri alınamaz.",
   batch_edit: "Toplu Öge Düzenlenmesi: {collection}",
-  between: "arasında(*)",
+  between: "arasında",
   bookmark_global: "Global: Tüm kullanıcılar için kaydet",
   bookmark_personal: "Kişisel: Sadece kendim için kaydet",
   bookmark_role: "Rol:'{role}' için kaydet",
@@ -81,23 +81,23 @@ export default {
   "collections-directus_files": "Dosyalar",
   "collections-directus_users": "Kullanıcılar",
   collections_and_fields: "Koleksiyonlar & Alanlar",
-  comfortable: "Rahat(*)",
+  comfortable: "Geniş",
   coming_soon: "Yakında",
   comment: "Yorum",
   comments: "Yorumlar",
-  compact: "Derlitoplu",
+  compact: "Sıkışık",
   config_error: "Konfigurasyon Bulunamadı",
   config_error_copy: "Uygulamanın konfigurasyon dosyasını oluşturduğunuzdan emin olun.",
   confirm: "Onayla",
   connection: "Bağlantı",
-  contains: "İçerir(*)",
-  cozy: "Sıcak(*)",
+  contains: "Şunu içerir",
+  cozy: "Normal",
   create: "Oluştur",
   create_collection: "Koleksiyon Oluştur",
   create_field: "Alan Ekle",
   create_role: "Rol Oluştur",
-  created_by: "Oluşturan:",
-  created_on: "Oluşturulma tarihi:",
+  created_by: "Oluşturan",
+  created_on: "Oluşturulma tarihi",
   creating_item: "Öge Oluştur",
   creating_item_page_title: "Öge Oluşturuluyor: {collection}",
   creating_role: "Rol Oluştur",
@@ -190,7 +190,7 @@ export default {
   enter_role_name: "Rol adını giriniz...",
   enter_value: "Değer Giriniz",
   environment: "Çevre",
-  equal_to: "Eşit",
+  equal_to: "Eşittir",
   error_unknown: "Bilinmeyen Hata. Daha sonra tekrar deneyin.",
   errors: {
     "11": "Veritabanına bağlanılamadı",
@@ -204,7 +204,7 @@ export default {
   },
   esc_cancel: "Esc tuşu işlemi iptal edip pencereyi kapatacaktır.",
   event_count: "Etkinlik Yok | 1 Etkinlik | {count} Etkinlik",
-  existing: "Varolan",
+  existing: "Varolanlar İçinden Seç",
   extension_error: "{ext} eklentisi yüklenirken bir hata oluştu.",
   extensions_missing: "Eklenti bulunamadı",
   extensions_missing_copy: "Sistem eklentilerinin yüklendiğinden emin olun.",
@@ -265,7 +265,7 @@ export default {
   hidden_detail: "Detayda Gizli",
   host: "Sunucu",
   icon: "İkon",
-  in_list: "Bunlardan biri",
+  in_list: "Bunlardan biridir",
   info: "Bilgi",
   initial_schema: "Başlangıç Şeması Seçin",
   initial_schema_copy:
@@ -277,13 +277,11 @@ export default {
   interface: "Arayüz",
   interface_count: "Arayüz yok | 1 Arayüz | {count} Arayüz",
   interface_has_no_options: "Bu arayüzün herhangi bir opsiyonu bulunmuyor.",
-  interface_settings:
-    "Every interface can be perfectly tailored to your needs. Below are the available options for this interface, but only some are required.
-    Her arayüz ihtiyaçlarınıza göre yapılandırılabilir. Aşağıdakiler bu arayüz için mevcut olan opsiyonlardır, fakat sadece birkısmı gereklidir.",
+  interface_settings: "Her arayüz ihtiyaçlarınıza göre yapılandırılabilir. Aşağıdakiler bu arayüz için mevcut olan opsiyonlardır, fakat sadece birkısmı gereklidir.",
   interfaces: "Arayüzler",
-  is_empty: "Boş olabilir mi?",
-  is_not_null: "NULL olamaz mı?",
-  is_null: "NULL olabilir mi?",
+  is_empty: "Boş olabilir",
+  is_not_null: "NULL değil",
+  is_null: "NULL",
   item_count: "Öge yok | 1 Öge | {count}  Öge",
   item_count_filter: "Sonuç Yok | 1 Sonuç | {count} Sonuç",
   item_deleted: "Öge Silindi",
@@ -304,14 +302,14 @@ export default {
   login: "Oturum Aç",
   m2m: "Çoktan oka (Many-to-Many) (M2M)",
   m2o: "Çoktan bire (Many-to-One) (M2O)",
-  manage: "Manage(*)",
-  manage_started: "Started Managing {collection}(*)",
-  manage_stopped: "Stopped Managing {collection}(*)",
+  manage: "Düzenle", // not sure
+  manage_started: "Koleksiyon {collection} Düzenleniyor", // not sure
+  manage_stopped: "Koleksiyon {collection} Düzenlemesi Bitti", // not sure
   max_one_primary_key: "Her koleksiyon sadece tek bir birincil anahtara (primary key) sahip olabilir.",
   max_size: "Max Boyut: {size}",
   mixed: "Karışık",
-  modified_by: "Düzenleyen:",
-  modified_on: "Düzenleme Tarihi:",
+  modified_by: "Düzenleyen",
+  modified_on: "Düzenleme Tarihi",
   more_options: "Daha fazla opsiyon",
   months: {
     january: "Ocak",
@@ -348,11 +346,11 @@ export default {
   no_items_selected: "Seçili bir öge yok",
   no_related_entries: "Uygun bir girdi bulunamadı",
   no_results: "Sonuç Yok",
-  no_results_body: "Bu filtreye uygun bir koleksiyon ögesi bulunamadı",
+  no_results_body: "Bu filtreye uygun bir öge bulunamadı",
   none: "Hiçbiri",
   not_between: "Arasında değildir",
-  not_contains: "İçermez",
-  not_empty: "Boş değildir",
+  not_contains: "Şunu içermez",
+  not_empty: "Boş olamaz",
   not_equal_to: "Eşit değildir",
   not_in_list: "Bunlardan biri değildir",
   note: "Not",
@@ -401,8 +399,8 @@ export default {
     "Aşağıda ilk yönetiçinin bilgileri de dahil olma üzere projeniz hakkında birkaç soru bulacaksınız.",
   project_key: "Proje Anahtarı",
   project_name: "Proje Adı",
-  read: "Read(*)",
-  readable_fields: "Readable Fields(*)",
+  read: "Görüntüleme", // not sure
+  readable_fields: "Görüntülene Alanlar", // not sure 
   readable_fields_copy: "Kullanıcıların görebileceği alanları seçiniz.",
   readonly: "Salt-Okunur",
   regex: "RegEx",
@@ -411,7 +409,7 @@ export default {
   relation_setup: "Bu ilişkisel bir alan olduğu için bu alanı gerekli diğer alanlar ile ilişkilendirmemiz gerekiyor.",
   relation_setup_copy:
     "Directus farklı farklı ilişkisel veri tipi kullanır, bu arayüz bunlardan {relation} olanını kullanmaktadır.",
-  relational: "İlişkisel(*)",
+  relational: "İlişkisel", // not sure
   relationship: "İlişki",
   relationship_not_setup: "İlişki doğru bir şekilde konfigüre edilmedi.",
   remove: "Kaldır",
@@ -470,10 +468,10 @@ export default {
   something_went_wrong_body: "İstek işlenirken bir sorun ile karşılaşıldı. Sayfayı yeniden yükleyin ve tekrar deneyin.",
   sort: "Sırala",
   sort_by: "Şuna göre sırala:",
-  spacing: "Boşluk",
+  spacing: "Aralık",
   status: "Durum",
   statuses: "Durumlar",
-  submit: "Gönder(*)",
+  submit: "Gönder", // not sure
   text: "Metin",
   this_collection: "Bu Koleksiyon",
   to: "Kime",
