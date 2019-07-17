@@ -9,10 +9,15 @@
       "radius": "Radius",
       "radius-comment": "The radius of the icon circle in pixels"
     },
-	"fr-FR": {
+    "fr-FR": {
       "activity-icon": "Icone d'activité",
       "radius": "Radius",
       "radius-comment": "Le radius de l'icone circulaire, en pixels"
+    },
+    "tr-TR": {
+      "activity-icon": "Aktivite İkonu",
+      "radius": "Yarıçap",
+      "radius-comment": "İkonun piksel değerinde yarıçapı"
     }
   }
 }
